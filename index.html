@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S.R.K IT_DEPT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class='spinner-wrapper'>
+    <div class="spinner"></div>
+</div>
+
+<div class="main-content"></div>
+<div class="login-box">
+
+  <h1>Login</h1>
+<form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+  <input type="text" placeholder="Username" name ="username">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password" name ="password" content="hidden">
+  </div>
+
+   <input type="submit" name="submit" class="btn" value="Login">
+</div>
+<script>
+    let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+    window.addEventListener('load', function () {
+        // spinnerWrapper.style.display = 'none';
+        spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+    });
+</script>
+</body>
+</html>

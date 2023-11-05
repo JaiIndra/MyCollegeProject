@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+.spinner-wrapper{
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+background-color:black;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    position: relative;
+    width: 100rem;
+    height: 100rem;
+    border-radius: 100%;
+}
+
+.spinner::before,
+.spinner:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.spinner:before {
+    width: 100%;
+    height: 100%;
+   background:url('../Results/wallpapers/im.gif')no-repeat center;
+    animation: spin .5s infinite linear;
+}
+.spinner:after {
+    width: 90%;
+    height: 90%;
+ 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url('https://wallpaperaccess.com/full/1338380.jpg') no-repeat;
+ background-size: cover;
+background-attachement: fixed;
+}
+
+.login-box{
+  border: solid gray 1px;  
+    width:25%;  
+    border-radius: 2px;  
+    margin: 120px auto;  
+    backdrop-filter: blur(15px);  
+    padding: 50px;
+  color: Red;
+}
+.login-box h1{
+  float: left;
+  font-size: 40px;
+  border-bottom: 4px solid #4caf50;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: ;
+  color: blue;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.btn{
+  width: 100%;
+  background: transparent;
+  border: 2px solid #4caf50;
+  color: orange;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
